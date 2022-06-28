@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div class="container">
+            <h2 style="color: white; padding-top: 20px; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact me!</h2>
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <b><label for="fname" style="color: white; font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Full Name</label></b>
+                    </div>
+                    <div class="col-45">
+                        <input type="text" id="fname" name="fname" placeholder="Full Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <b><label for="email" style="color: white; font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Email</label></b>
+                    </div>
+                    <div class="col-45">
+                        <input type="text" id="email" name="email" placeholder="Enter Email">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <b><label for="gender" style="color: white; font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Occupations</label></b>
+                    </div>
+                    <div class="col-45">
+                        <select id="gender" name="gender">
+                            <option value="students">Students</option>
+                            <option value="software engineer">Teacher</option>
+                            <option value="software engineer">Police</option>
+                            <option value="software engineer">Engineer</option>
+                            <option value="software engineer">Software Engineer</option>
+                            <option value="software engineer">Data Analyst</option>
+                            <option value="software engineer">Others</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <b><label for="gender" style="color: white; font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Gender</label></b>
+                    </div>
+                    <div class="col-45" style="padding-bottom: 5px; color: white;">
+                        <input type="radio" id="male" name="gender">
+                        <b><label for="male">Male</label><br></b>
+                        <input type="radio" id="female" name="gender">
+                        <b><label for="female">Female</label><br></b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <b><label for="tell" style="color: white; font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Tell Me</label></b>
+                    </div>
+                    <div class="col-45">
+                        <textarea id="tell" name="tell" placeholder="What You Want To Talk About?" style="height:100px"></textarea>
+                    </div>
+                </div>
+
+                <b><input type="submit" value="Submit" style="font-size:20px;"></b>
+            </form>
+        </div>
+    </body>
+</html>
